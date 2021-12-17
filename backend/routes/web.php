@@ -21,7 +21,9 @@ Route::get('/', function () {
 Route::get('/ranking', function () {
 
     $users = DB::table('USERS')->get();
-    return ($users);
+    return view('Ranking Page');
+   /* return ($users);
+        */
 });
 
 Route::post('/add_candidate', function () {
