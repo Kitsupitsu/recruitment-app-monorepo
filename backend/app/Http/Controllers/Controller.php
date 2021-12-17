@@ -17,9 +17,9 @@ class Controller extends Controller
             die("Could not open connection to database server.  Please check your configuration.");
         }
 
-    /*
+
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
-    */
+
     public function store(Request $request)
     {
      $request->validate([
