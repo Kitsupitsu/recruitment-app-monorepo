@@ -18,7 +18,7 @@ Route::get('/', function () {
 
 });
 
-Route::get('ranking', function () {
+Route::get('/ranking', function () {
 
     $users = DB::table('USERS')->get();
     echo('Hello');
