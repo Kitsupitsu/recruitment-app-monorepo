@@ -7,7 +7,6 @@ function Section(props) {
 }
 
 const changeRoute = (href) => {
-    console.log()
     window.location = href
 }
 
