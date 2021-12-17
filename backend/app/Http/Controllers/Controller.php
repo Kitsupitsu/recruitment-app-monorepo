@@ -8,12 +8,25 @@ class Controller extends Controller
     /*
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
     */
+    public function store(Request $request)
+    {
+     $request->validate([
+        'name'=> 'required',
+        'surname'=> 'required',
+        'email'=> 'required',
+        'country'=> 'required',
+        'city' => 'required',
+        'department'=> 'required',
+        'yearsInEestec' => 'required',
+        'MotivationalLetter' => 'required'
+     ]);
 
-    //For persist new user to database
-    public function store(Request $request){
-        //
+     User::create($request->all());
+     $users -> save();
 
-    }
+     return redirect('/') ->with('success','Record has been added');
+
+     }
 
     public function destroy($id){
         //
