@@ -2,12 +2,22 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
-use Illuminate\Foundation\Bus\DispatchesJobs;
-use Illuminate\Foundation\Validation\ValidatesRequests;
-use Illuminate\Routing\Controller as BaseController;
-
-class Controller extends BaseController
+class Controller extends Controller
 {
+
+    /*
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
+    */
+
+    //For persist new user to database
+    public function store(Request $request){
+        //
+
+    }
+
+    public function destroy($id){
+        //
+    }
+
+
 }
