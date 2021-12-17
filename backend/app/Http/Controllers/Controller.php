@@ -24,9 +24,10 @@ class Controller extends Controller
      User::create($request->all());
      $users -> save();
 
-     return redirect('/') ->with('success','Record has been updated');
+     return redirect('/') ->with('success','Record has been added');
 
      }
+
 
     public function destroy($id){
         //

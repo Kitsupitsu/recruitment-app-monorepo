@@ -17,10 +17,13 @@ Route::get('/', function () {
     return view('You Are Welcome To High Tech Satellite Of Trio\'s');
 
 });
-Route::get('/ranking', function () {
-    return view('Ranking Page');
 
+Route::get('/ranking', function () {
+
+    $users = DB::table('USERS')->get();
+    return ($users);
 });
+
 Route::post('/add_candidate', function () {
     return view('Add Candidate Page');
 });
