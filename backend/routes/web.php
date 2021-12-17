@@ -14,5 +14,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('You Are Welcome To High Tech Satellite Of Trio\'s');
+
 });
+Route::get('/ranking', function () {
+    return view('Ranking Page');
+
+});
+Route::post('/add_candidate', function () {
+    return view('Add Candidate Page');
+});
+
+
